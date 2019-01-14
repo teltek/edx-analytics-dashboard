@@ -12,7 +12,7 @@ require(['load/init-page'], function(page) {
                     el: '#enrollment-chart-view',
                     model: page.models.courseModel,
                     modelAttribute: 'education',
-                    excludeData: ['Unknown'],
+                    excludeData: [gettext('Unknown')],
                     dataType: 'percent',
                     trends: [{
                         title: gettext('Percentage'),
